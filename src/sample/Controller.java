@@ -8,11 +8,10 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.control.TextField;
 
-import javax.swing.text.html.ImageView;
+import javafx.scene.image.ImageView;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Controller {
     protected File file=new File("Resources");
@@ -22,10 +21,10 @@ public class Controller {
     public Person currentPerson = new Person(0); //TODO fix list
     public   List<Person> people = new ArrayList<Person>(1);
 
-    @FXML public javafx.scene.image.ImageView new24pic;
-    @FXML public javafx.scene.image.ImageView new16pic;
-    @FXML public javafx.scene.image.ImageView delete24pic;
-    @FXML public javafx.scene.image.ImageView delete16pic;
+    @FXML public ImageView new24pic;
+    @FXML public ImageView new16pic;
+    @FXML public ImageView delete24pic;
+    @FXML public ImageView delete16pic;
 
     @FXML public Button newButton;
     @FXML public Button deleteButton;
