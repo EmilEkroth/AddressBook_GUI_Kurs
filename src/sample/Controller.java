@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Controller {
     Person currentPerson = new Person(0); //TODO fix list
-    List<Person> people = new ArrayList<Person>(1);
+    List<Person> people = new ArrayList(){};
 
 
     @FXML private Button newButton;
@@ -40,19 +40,21 @@ public class Controller {
         //personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName());
     }
 
-    EventHandler<ActionEvent> eventchangeperson = new EventHandler<ActionEvent>() {
-        public void handle(ActionEvent e)
-        {
-            fieldFirst.setText("oke detta fungera");
-        }
-    };
+
+
+    @FXML
+    private void changePerson (Person p)
+    {
+        currentPerson = p;
+        handleUpdate();
+    }
 
     public void handleNewPerson ()
     {
         int i = personbutton.size();
         people.add(new Person(people.size()));
         personbutton.add(new Button());
-        personbutton.get(i).setOnAction(eventchangeperson);
+        personbutton.get(i).setOnAction(e -> changePerson(people.get(i)));
         personbutton.get(i).setText("Unnamed");
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
