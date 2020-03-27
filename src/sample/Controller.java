@@ -72,9 +72,11 @@ public class Controller {
     public void deletePerson(){
         people.remove(currentPerson);
         personbutton.remove(currentPerson.nr);
-        personList.getItems().remove(1);
+        personList.getItems().remove(currentPerson.nr);
         for (int k=currentPerson.nr;k<people.size();k++ ) {
             people.get(k).nr--;
+            int tmp = k;
+            personbutton.get(k).setOnAction(e -> changePerson(people.get(tmp)));
         }
     }
 }
