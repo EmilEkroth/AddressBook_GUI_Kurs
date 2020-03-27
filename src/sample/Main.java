@@ -14,11 +14,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("AddressBook");
         primaryStage.setScene(new Scene(root, 500, 600));
 
-        Image i = new Image(new FileInputStream("E:/AddressBook_GUI_Kurs/Resources/frameIcon32.gif"));
-        primaryStage.getIcons().add(i);
+        //Image i = new Image(new FileInputStream("E:/AddressBook_GUI_Kurs/Resources/frameIcon32.gif"));
+        //primaryStage.getIcons().add(i);
         primaryStage.show();
     }
 
