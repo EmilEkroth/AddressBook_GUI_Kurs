@@ -52,8 +52,6 @@ public class Controller {
                 e.printStackTrace();
             }
         loadPersons();
-
-        handleNewPerson();
         currentPerson=people.get(0);
     }
     public void handleUpdate()
@@ -148,6 +146,7 @@ public class Controller {
             }
 
         } catch (Exception ex) {
+            handleNewPerson();
             ex.printStackTrace();
         }
     }
