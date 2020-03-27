@@ -36,8 +36,6 @@ public class Controller {
     public TextField fieldCity;
     public TextField fieldAdress;
 
-
-    public Language language = new EnglishLanguage();
     public void initialize(){
         try {
            new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
@@ -48,8 +46,6 @@ public class Controller {
         catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-
-
 
     }
     public void handleUpdate()
@@ -142,5 +138,10 @@ public class Controller {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void changeLanguage()
+    {
+
     }
 }

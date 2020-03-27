@@ -114,6 +114,15 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button fx:id="deleteButton1" layoutX="56.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="42.0" prefWidth="31.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
         </items>
       </ToolBar>
       <MenuBar>
