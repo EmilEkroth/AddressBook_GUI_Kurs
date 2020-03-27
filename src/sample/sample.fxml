@@ -114,7 +114,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="New  Contact">
+              <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="%newContactMenuItem.text">
                      <graphic>
                         <ImageView fx:id="new16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic></MenuItem>
@@ -123,14 +123,14 @@
                         <ImageView fx:id="delete16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </MenuItem>
-                  <MenuItem mnemonicParsing="false" onAction="#savePersons" text="Save" />
-                  <MenuItem mnemonicParsing="false" onAction="#loadPersons" text="Load" />
-                  <MenuItem mnemonicParsing="false" text="Exit" />
+                  <MenuItem mnemonicParsing="false" onAction="#savePersons" text="%saveMenuItem.text" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadPersons" text="%loadMenuItem.text" />
+                  <MenuItem mnemonicParsing="false" text="%exitApplicationMenuItem.text" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" text="%aboutMenuItem.text" />
             </items>
           </Menu>
         </menus>
