@@ -27,75 +27,13 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
    </columnConstraints>
    <children>
-      <Pane prefHeight="600.0" prefWidth="520.0" GridPane.rowIndex="3">
-         <children>
-            <SplitPane dividerPositions="0.29797979797979796" prefHeight="517.0" prefWidth="520.0">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                     <children>
-                        <ListView fx:id="personList" prefHeight="515.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                     </children>
-                  </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="384.0" prefWidth="375.0">
-                     <children>
-                        <VBox layoutX="10.0" layoutY="8.0" prefHeight="440.0" prefWidth="341.0">
-                           <children>
-                              <Pane layoutX="30.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldFirst" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="%firstNameLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="30.0" layoutY="10.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldLast" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutY="13.0" prefHeight="17.0" prefWidth="67.0" text="%lastNameLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="30.0" layoutY="45.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldPhone" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="10.0" prefHeight="23.0" prefWidth="48.0" text="%phoneLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="30.0" layoutY="80.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldEmail" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="23.0" layoutY="13.0" prefHeight="17.0" prefWidth="42.0" text="%emailLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldAddress" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="%addressLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="30.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldPost" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="-9.0" layoutY="13.0" prefHeight="17.0" prefWidth="75.0" text="%postcodeLabel.text" />
-                                 </children>
-                              </Pane>
-                              <Pane layoutX="30.0" layoutY="150.0" prefHeight="35.0" prefWidth="300.0">
-                                 <children>
-                                    <TextField fx:id="fieldCity" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="13.0" prefHeight="17.0" prefWidth="34.0" text="%cityLabel.text" />
-                                 </children>
-                              </Pane>
-                           </children>
-                        </VBox>
-                     </children>
-                  </AnchorPane>
-              </items>
-            </SplitPane>
-         </children>
-      </Pane>
       <ToolBar prefHeight="71.0" prefWidth="520.0" GridPane.rowIndex="1">
         <items>
           <Button fx:id="newButton" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="42.0" prefWidth="42.0">
@@ -161,5 +99,64 @@
           </Menu>
         </menus>
       </MenuBar>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="517.0" prefWidth="520.0" GridPane.rowIndex="5">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="personList" prefHeight="515.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="384.0" prefWidth="375.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="8.0" prefHeight="440.0" prefWidth="341.0">
+                     <children>
+                        <Pane layoutX="30.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldFirst" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="%firstNameLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="30.0" layoutY="10.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldLast" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutY="13.0" prefHeight="17.0" prefWidth="67.0" text="%lastNameLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="30.0" layoutY="45.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldPhone" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="10.0" prefHeight="23.0" prefWidth="48.0" text="%phoneLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="30.0" layoutY="80.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldEmail" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutX="23.0" layoutY="13.0" prefHeight="17.0" prefWidth="42.0" text="%emailLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldAddress" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="%addressLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="30.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldPost" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-9.0" layoutY="13.0" prefHeight="17.0" prefWidth="75.0" text="%postcodeLabel.text" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="30.0" layoutY="150.0" prefHeight="35.0" prefWidth="300.0">
+                           <children>
+                              <TextField fx:id="fieldCity" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                              <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="13.0" prefHeight="17.0" prefWidth="34.0" text="%cityLabel.text" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </GridPane>
