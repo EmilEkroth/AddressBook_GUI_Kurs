@@ -121,8 +121,24 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="New Contact" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="New  Contact">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/Users/joelOlausson/Documents/GitHub/AddressBook_GUI_Kurs/Resources/New16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Delete Contact">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/Users/joelOlausson/Documents/GitHub/AddressBook_GUI_Kurs/Resources/Delete16.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Exit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
