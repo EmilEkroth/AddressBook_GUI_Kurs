@@ -98,18 +98,6 @@
       </Pane>
       <ToolBar prefHeight="71.0" prefWidth="520.0" GridPane.rowIndex="1">
         <items>
-            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deletePerson" prefHeight="42.0" prefWidth="31.0">
-               <graphic>
-                  <ImageView fx:id="delete24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <viewport>
-                        <Rectangle2D />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-               <tooltip>
-                  <Tooltip text="%newContactTooltip.text" />
-               </tooltip>
-            </Button>
           <Button fx:id="newButton" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="42.0" prefWidth="42.0">
                <graphic>
                   <ImageView fx:id="new24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
@@ -119,7 +107,19 @@
                   </ImageView>
                </graphic>
                <tooltip>
-                  <Tooltip text="Add new contact" />
+                  <Tooltip text="%newContactTooltip.text" />
+               </tooltip>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deletePerson" prefHeight="42.0" prefWidth="31.0">
+               <graphic>
+                  <ImageView fx:id="delete24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="%deleteContactToolip.text" />
                </tooltip>
             </Button>
         </items>

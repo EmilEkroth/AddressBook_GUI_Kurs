@@ -52,6 +52,8 @@ public class Controller {
                 e.printStackTrace();
             }
 
+        handleNewPerson();
+        currentPerson=people.get(0);
     }
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
