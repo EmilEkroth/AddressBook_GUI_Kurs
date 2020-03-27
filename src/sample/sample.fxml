@@ -68,9 +68,9 @@
                                     <Label alignment="CENTER_RIGHT" layoutX="23.0" layoutY="13.0" prefHeight="17.0" prefWidth="42.0" text="%emailLabel.text" />
                                  </children>
                               </Pane>
-                              <Pane fx:id="fieldAddress" layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
+                              <Pane layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
-                                    <TextField fx:id="fieldEmail1" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
+                                    <TextField fx:id="fieldAddress" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
                                     <Label alignment="CENTER_RIGHT" layoutX="6.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="%addressLabel.text" />
                                  </children>
                               </Pane>
