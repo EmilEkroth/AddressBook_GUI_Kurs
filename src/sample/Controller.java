@@ -53,6 +53,8 @@ public class Controller {
             }
         loadPersons();
 
+        handleNewPerson();
+        currentPerson=people.get(0);
     }
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
