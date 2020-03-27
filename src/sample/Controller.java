@@ -97,6 +97,8 @@ public class Controller {
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
         personList.getItems().add(personbutton.get(i));
+
+        changePerson(people.get(people.size()-1));
     }
     public void deletePerson(){
         if(currentPerson==null) return;
@@ -109,7 +111,9 @@ public class Controller {
             personbutton.get(k).setOnAction(e -> changePerson(people.get(tmp)));
         }
         if(people.size()==0) currentPerson=null;
-        else currentPerson=people.get(0);
+        else {
+            changePerson(people.get(0));
+        }
     }
     public void savePersons() {
 
