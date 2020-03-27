@@ -47,7 +47,7 @@
                               <Pane layoutX="30.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldFirst" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="%firstNameLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="First name" />
                                  </children>
                               </Pane>
                               <Pane layoutX="30.0" layoutY="10.0" prefHeight="35.0" prefWidth="300.0">

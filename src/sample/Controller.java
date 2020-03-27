@@ -22,10 +22,10 @@ public class Controller {
     public Person currentPerson = new Person(0); //TODO fix list
     public   List<Person> people = new ArrayList<Person>(1);
 
-    /*@FXML public ImageView new24pic;
-    @FXML public ImageView new16pic;
-    @FXML public ImageView delete24pic;
-    @FXML public ImageView delete16pic;*/
+    //@FXML public ImageView new24pic;
+    //@FXML public ImageView new16pic;
+    //@FXML public ImageView delete24pic;
+    //@FXML public ImageView delete16pic;
 
     @FXML public Button newButton;
     @FXML public Button deleteButton;
