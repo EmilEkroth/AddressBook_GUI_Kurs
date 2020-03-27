@@ -37,7 +37,9 @@ public class Controller {
     public TextField fieldEmail;
     public TextField fieldPost;
     public TextField fieldCity;
-    EventHandler handler;
+
+
+    public Language language = new EnglishLanguage();
 
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
