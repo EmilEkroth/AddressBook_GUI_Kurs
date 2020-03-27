@@ -1,4 +1,6 @@
 package sample;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -15,14 +17,15 @@ public class Controller {
 
     @FXML private Button newButton;
     @FXML private Button deleteButton;
-    @FXML private ListView personList;
-    //public List<Button> personbutton; //TODO fix list
+    public ListView personList;
+    public List<Button> personbutton;
     public TextField fieldFirst;
     public TextField fieldLast;
     public TextField fieldPhone;
     public TextField fieldEmail;
     public TextField fieldPost;
     public TextField fieldCity;
+    EventHandler handler;
 
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
@@ -36,9 +39,19 @@ public class Controller {
         //personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName());
     }
 
+    EventHandler<ActionEvent> eventchangeperson = new EventHandler<ActionEvent>() {
+        public void handle(ActionEvent e)
+        {
+            fieldFirst.setText("oke detta fungera");
+        }
+    };
+
     public void handleNewPerson ()
     {
-            people.add(new Person(people.size()));
-            //personbutton.add(new Button());
+        int i = personList.getItems().size();
+        people.add(new Person(people.size()));
+        Button b = newButton;
+        b.setOnAction(eventchangeperson);
+        personList.getItems().add(b);
     }
 }
