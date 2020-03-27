@@ -146,6 +146,8 @@ public class Controller {
                 personbutton.get(i).setLayoutX(13);
                 personList.getItems().add(personbutton.get(i));
             }
+            currentPerson=people.get(0);
+            UpdateFields();
 
         } catch (Exception ex) {
             ex.printStackTrace();
