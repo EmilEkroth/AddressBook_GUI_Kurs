@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Controller {
     Person currentPerson = new Person(0); //TODO fix list
@@ -18,7 +19,7 @@ public class Controller {
     @FXML private Button newButton;
     @FXML private Button deleteButton;
     public ListView personList;
-    public List<Button> personbutton;
+    public List<Button> personbutton = new ArrayList(){};
     public TextField fieldFirst;
     public TextField fieldLast;
     public TextField fieldPhone;
@@ -48,10 +49,13 @@ public class Controller {
 
     public void handleNewPerson ()
     {
-        int i = personList.getItems().size();
+        int i = personbutton.size();
         people.add(new Person(people.size()));
-        Button b = newButton;
-        b.setOnAction(eventchangeperson);
-        personList.getItems().add(b);
+        personbutton.add(new Button());
+        personbutton.get(i).setOnAction(eventchangeperson);
+        personbutton.get(i).setText("Unnamed");
+        personbutton.get(i).setMaxSize(125,20);
+        personbutton.get(i).setLayoutX(13);
+        personList.getItems().add(personbutton.get(i));
     }
 }
