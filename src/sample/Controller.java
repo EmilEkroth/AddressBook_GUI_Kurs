@@ -52,8 +52,6 @@ public class Controller {
                 e.printStackTrace();
             }
 
-
-
     }
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
@@ -145,5 +143,10 @@ public class Controller {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void changeLanguage()
+    {
+
     }
 }
