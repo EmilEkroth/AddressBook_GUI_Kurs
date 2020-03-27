@@ -43,7 +43,6 @@ public class Controller {
 
     public void initialize(){
         try {
-            flagpic.setImage(new Image(new FileInputStream(filePath+"/UKflag.png")));
             new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
             new16pic.setImage(new Image(new FileInputStream(filePath+"/New16.gif")));
             delete16pic.setImage(new Image(new FileInputStream(filePath+"/Delete16.gif")));
@@ -146,7 +145,6 @@ public class Controller {
         }
     }
 
-    }
     public void die(){
         System.exit(0);
     }
