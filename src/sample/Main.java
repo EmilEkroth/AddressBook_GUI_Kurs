@@ -21,7 +21,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        ResourceBundle bundle = java.util.ResourceBundle.getBundle("sample.AddressBook");
+        ResourceBundle bundle = java.util.ResourceBundle.getBundle("sample.AddressBook_en");
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"), bundle);
         primaryStage.setTitle("AddressBook");
         primaryStage.setScene(new Scene(root, 500, 600));
