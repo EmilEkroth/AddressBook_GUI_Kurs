@@ -23,7 +23,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         ResourceBundle bundle = java.util.ResourceBundle.getBundle("sample.AddressBook_en");
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"), bundle);
-        primaryStage.setTitle("AddressBook");
+        primaryStage.setTitle(bundle.getString("application.name") + bundle.getString("application.version"));
         primaryStage.setScene(new Scene(root, 500, 600));
 
         Image i = new Image(new FileInputStream(filePath+"/frameIcon32.gif"));
