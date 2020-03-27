@@ -145,8 +145,6 @@ public class Controller {
             ex.printStackTrace();
         }
     }
-
-    }
     public void die(){
         System.exit(0);
     }
