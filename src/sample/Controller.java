@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Controller {
-    Person currentPerson = new Person(); //TODO fix list
+    Person currentPerson = new Person(0); //TODO fix list
     List<Person> people = new ArrayList<Person>(1);
 
 
@@ -62,18 +62,20 @@ public class Controller {
     public void handleNewPerson ()
     {
         int i = personbutton.size();
-        people.add(new Person());
+        people.add(new Person(i));
         personbutton.add(new Button());
         personbutton.get(i).setOnAction(e -> changePerson(people.get(i)));
-        personbutton.get(i).setText("Unnamed");
+        personbutton.get(i).setText("Unnamed" + i);
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
         personList.getItems().add(personbutton.get(i));
     }
     public void deletePerson(){
-        currentPerson=people.get(1);
         people.remove(currentPerson);
-        personbutton.remove(1);
+        personbutton.remove(currentPerson.nr);
         personList.getItems().remove(1);
+        for (int k=currentPerson.nr;k<people.size();k++ ) {
+            people.get(k).nr--;
+        }
     }
 }

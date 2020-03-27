@@ -12,6 +12,12 @@ public class Person {
     private String postCode;
     private String city;
 
+    public int nr;
+
+    public Person(int nr){
+        this.nr=nr;
+    }
+
     //TODO defensiv kopiering:
     public String getFirstName() {
         return firstName;
