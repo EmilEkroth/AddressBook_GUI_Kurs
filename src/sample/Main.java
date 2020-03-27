@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+
 public class Main extends Application {
 
     @Override
@@ -14,7 +16,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 500, 600));
-        //primaryStage.getIcons().add(new Image("Addressbook_GUI_Kurs/resources/frameIcon32.gif"));
+
+        Image i = new Image(new FileInputStream("/Users/joelOlausson/Documents/GitHub/AddressBook_GUI_Kurs/Resources/frameIcon32.gif"));
+        primaryStage.getIcons().add(i);
         primaryStage.show();
     }
 
