@@ -51,6 +51,7 @@ public class Controller {
         catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+        loadPersons();
 
     }
     public void handleUpdate()
@@ -126,6 +127,10 @@ public class Controller {
     public void loadPersons() {
 
         try {
+            people=null;
+            personbutton.clear();
+            personList.getItems().clear();
+
             FileInputStream fileIn = new FileInputStream(filePath+"/people");
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
             people=(List<Person>) objectIn.readObject();
@@ -145,6 +150,7 @@ public class Controller {
         }
     }
     public void die(){
+        savePersons();
         System.exit(0);
     }
 }
