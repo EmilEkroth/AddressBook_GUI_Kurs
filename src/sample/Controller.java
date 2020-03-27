@@ -51,8 +51,10 @@ public class Controller {
         catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+
         loadPersons();
         currentPerson=people.get(0);
+        UpdateFields();
     }
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
@@ -77,7 +79,6 @@ public class Controller {
         fieldPost.setText(currentPerson.getPostCode());
         fieldCity.setText(currentPerson.getCity());
         fieldAddress.setText(currentPerson.getAdress());
-
     }
 
     @FXML
@@ -144,8 +145,7 @@ public class Controller {
                 personbutton.get(i).setLayoutX(13);
                 personList.getItems().add(personbutton.get(i));
             }
-            currentPerson=people.get(0);
-            UpdateFields();
+
 
         } catch (Exception ex) {
             handleNewPerson();
