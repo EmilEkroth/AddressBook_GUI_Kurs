@@ -38,9 +38,12 @@ public class Controller {
 
 
     public Language language = new EnglishLanguage();
+
+
     public void initialize(){
         try {
-           new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
+            flagpic.setImage(new Image(new FileInputStream(filePath+"/UKflag.png")));
+            new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
             new16pic.setImage(new Image(new FileInputStream(filePath+"/New16.gif")));
             delete16pic.setImage(new Image(new FileInputStream(filePath+"/Delete16.gif")));
             delete24pic.setImage(new Image(new FileInputStream(filePath+"/Delete24.gif")));
