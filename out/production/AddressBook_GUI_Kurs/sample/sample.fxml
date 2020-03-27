@@ -10,7 +10,9 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -104,10 +106,26 @@
                      </viewport>
                   </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Add new contact" />
+               </tooltip>
             </Button>
             <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deletePerson" prefHeight="42.0" prefWidth="31.0">
                <graphic>
                   <ImageView fx:id="delete24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Delete current contact" />
+               </tooltip>
+            </Button>
+            <Pane prefHeight="42.0" prefWidth="368.0" />
+            <Button layoutY="10.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="42.0" prefWidth="31.0">
+               <graphic>
+                  <ImageView fx:id="flagpic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <viewport>
                         <Rectangle2D />
                      </viewport>
@@ -123,15 +141,27 @@
               <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="%newContactMenuItem.text">
                      <graphic>
                         <ImageView fx:id="new16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
-                     </graphic></MenuItem>
+                     </graphic>
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator></MenuItem>
                   <MenuItem mnemonicParsing="false" onAction="#deletePerson" text="%deleteContactMenuItem.text">
                      <graphic>
                         <ImageView fx:id="delete16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="D" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
                   </MenuItem>
-                  <MenuItem mnemonicParsing="false" onAction="#savePersons" text="%saveMenuItem.text" />
-                  <MenuItem mnemonicParsing="false" onAction="#loadPersons" text="%loadMenuItem.text" />
-                  <MenuItem mnemonicParsing="false" text="%exitApplicationMenuItem.text" />
+                  <MenuItem mnemonicParsing="false" onAction="#savePersons" text="%saveMenuItem.text">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#loadPersons" text="%loadMenuItem.text">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="L" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#die" text="%exitApplicationMenuItem.text" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

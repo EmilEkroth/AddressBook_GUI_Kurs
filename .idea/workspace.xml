@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="431f8400-9919-49ad-bee4-82abbdbff99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/people" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/people" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/EnglishLanguage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Language.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
@@ -26,6 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1ZiVhy3w4rax5iwYAVTLqUoJNT2" />
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\AddressBook_GUI_Kurs\src\sample" />
@@ -95,13 +99,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Controller.java</url>
-          <line>99</line>
+          <line>97</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/Controller.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

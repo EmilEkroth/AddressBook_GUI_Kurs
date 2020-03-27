@@ -23,6 +23,7 @@ public class Controller {
     @FXML public ImageView new16pic;
     @FXML public ImageView delete24pic;
     @FXML public ImageView delete16pic;
+    @FXML public ImageView flagpic;
 
     @FXML public Button newButton;
     @FXML public Button deleteButton;
@@ -35,9 +36,6 @@ public class Controller {
     public TextField fieldPost;
     public TextField fieldCity;
     public TextField fieldAddress;
-
-
-    public Language language = new EnglishLanguage();
 
 
     public void initialize(){
@@ -148,5 +146,8 @@ public class Controller {
     public void changeLanguage()
     {
 
+    }
+    public void die(){
+        System.exit(0);
     }
 }
