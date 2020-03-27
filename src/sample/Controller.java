@@ -90,7 +90,7 @@ public class Controller {
         people.add(new Person(i));
         personbutton.add(new Button());
         personbutton.get(i).setOnAction(e -> changePerson(people.get(i)));
-        personbutton.get(i).setText("Unnamed");
+        personbutton.get(i).setText("blank");
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
         personList.getItems().add(personbutton.get(i));
