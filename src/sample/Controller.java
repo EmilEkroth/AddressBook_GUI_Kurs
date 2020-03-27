@@ -54,6 +54,7 @@ public class Controller {
     @FXML
     private void changePerson (Person p)
     {
+
         currentPerson = p;
         UpdateFields();
     }
