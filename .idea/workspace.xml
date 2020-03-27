@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="431f8400-9919-49ad-bee4-82abbdbff99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AddressBook_GUI_Kurs/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +23,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +96,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Controller.java</url>
-          <line>83</line>
+          <line>86</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

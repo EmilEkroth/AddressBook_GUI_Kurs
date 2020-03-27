@@ -27,8 +27,6 @@ public class Main extends Application {
         Image i = new Image(new FileInputStream(filePath+"/frameIcon32.gif"));
         primaryStage.getIcons().add(i);
         primaryStage.show();
-
-
     }
 
 
