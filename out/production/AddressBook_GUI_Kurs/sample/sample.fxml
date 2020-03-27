@@ -96,7 +96,7 @@
       </Pane>
       <ToolBar prefHeight="71.0" prefWidth="520.0" GridPane.rowIndex="1">
         <items>
-          <Button fx:id="newButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0">
+          <Button fx:id="newButton" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="42.0" prefWidth="42.0">
                <graphic>
                   <ImageView fx:id="new24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <viewport>
@@ -105,7 +105,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="31.0">
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deletePerson" prefHeight="42.0" prefWidth="31.0">
                <graphic>
                   <ImageView fx:id="delete24pic" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <viewport>
@@ -124,7 +124,7 @@
                      <graphic>
                         <ImageView fx:id="new16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic></MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Delete Contact">
+                  <MenuItem mnemonicParsing="false" onAction="#deletePerson" text="Delete Contact">
                      <graphic>
                         <ImageView fx:id="delete16pic" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
