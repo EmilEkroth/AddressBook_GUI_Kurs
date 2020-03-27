@@ -126,7 +126,7 @@
       </ToolBar>
       <MenuBar>
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="%fileMenu.text">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#handleNewPerson" text="%newContactMenuItem.text">
                      <graphic>
@@ -154,7 +154,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#die" text="%exitApplicationMenuItem.text" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="%helpMenu.text">
             <items>
               <MenuItem mnemonicParsing="false" text="%aboutMenuItem.text" />
             </items>
