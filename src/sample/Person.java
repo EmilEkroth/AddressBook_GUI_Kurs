@@ -1,9 +1,10 @@
 package sample;
 
+import java.io.Serializable;
 import java.security.PublicKey;
 import java.util.stream.Stream;
 
-public class Person {
+public class Person implements Serializable {
 
     private String firstName;
     private String lastName;
