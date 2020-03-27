@@ -38,7 +38,6 @@ public class Controller {
 
     public Language language = new EnglishLanguage();
     public void initialize(){
-                System.out.println("hej");
         try {
            new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
             new16pic.setImage(new Image(new FileInputStream(filePath+"/New16.gif")));
