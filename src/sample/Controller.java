@@ -40,20 +40,32 @@ public class Controller {
         //personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName());
     }
 
-    EventHandler<ActionEvent> eventchangeperson = new EventHandler<ActionEvent>() {
-        public void handle(ActionEvent e)
-        {
-            fieldFirst.setText("oke detta fungera");
-        }
-    };
+    void UpdateFields ()
+    {
+        fieldFirst.setText(currentPerson.getFirstName());
+        fieldLast.setText(currentPerson.getLastName());
+        fieldPhone.setText(currentPerson.getPhone());
+        fieldEmail.setText(currentPerson.getEmail());
+        fieldPost.setText(currentPerson.getPostCode());
+        fieldCity.setText(currentPerson.getCity());
+
+    }
+
+    @FXML
+    private void changePerson (Person p)
+    {
+        //fieldFirst.setText(""+i);
+        currentPerson = p;
+        UpdateFields();
+    }
 
     public void handleNewPerson ()
     {
         int i = personbutton.size();
         people.add(new Person());
         personbutton.add(new Button());
-        personbutton.get(i).setOnAction(eventchangeperson);
-        personbutton.get(i).setText("Unnamed"+ i);
+        personbutton.get(i).setOnAction(e -> changePerson(people.get(i)));
+        personbutton.get(i).setText("Unnamed");
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
         personList.getItems().add(personbutton.get(i));
