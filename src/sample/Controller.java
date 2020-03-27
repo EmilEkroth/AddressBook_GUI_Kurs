@@ -37,7 +37,7 @@ public class Controller {
         currentPerson.setPostCode(fieldPost.getText());
         currentPerson.setCity(fieldCity.getText());
 
-        personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName());
+        personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName() +" "+ currentPerson.getLastName());
     }
 
     void UpdateFields ()
@@ -54,7 +54,6 @@ public class Controller {
     @FXML
     private void changePerson (Person p)
     {
-
         currentPerson = p;
         UpdateFields();
     }
@@ -65,7 +64,7 @@ public class Controller {
         people.add(new Person(i));
         personbutton.add(new Button());
         personbutton.get(i).setOnAction(e -> changePerson(people.get(i)));
-        personbutton.get(i).setText("Unnamed" + i);
+        personbutton.get(i).setText("Unnamed");
         personbutton.get(i).setMaxSize(125,20);
         personbutton.get(i).setLayoutX(13);
         personList.getItems().add(personbutton.get(i));
