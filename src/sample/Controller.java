@@ -26,6 +26,7 @@ public class Controller {
     @FXML public ImageView new16pic;
     @FXML public ImageView delete24pic;
     @FXML public ImageView delete16pic;
+    @FXML public ImageView flagpic;
 
     @FXML public Button newButton;
     @FXML public Button deleteButton;
@@ -39,9 +40,11 @@ public class Controller {
     public TextField fieldCity;
     public TextField fieldAddress;
 
+
     public void initialize(){
         try {
-           new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
+            flagpic.setImage(new Image(new FileInputStream(filePath+"/UKflag.png")));
+            new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
             new16pic.setImage(new Image(new FileInputStream(filePath+"/New16.gif")));
             delete16pic.setImage(new Image(new FileInputStream(filePath+"/Delete16.gif")));
             delete24pic.setImage(new Image(new FileInputStream(filePath+"/Delete24.gif")));
@@ -141,5 +144,10 @@ public class Controller {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    }
+    public void die(){
+        System.exit(0);
     }
 }
