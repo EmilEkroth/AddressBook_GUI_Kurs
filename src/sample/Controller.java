@@ -40,13 +40,23 @@ public class Controller {
         //personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName());
     }
 
+    void UpdateFields ()
+    {
+        fieldFirst.setText(currentPerson.getFirstName());
+        fieldLast.setText(currentPerson.getLastName());
+        fieldPhone.setText(currentPerson.getPhone());
+        fieldEmail.setText(currentPerson.getEmail());
+        fieldPost.setText(currentPerson.getPostCode());
+        fieldCity.setText(currentPerson.getCity());
 
+    }
 
     @FXML
     private void changePerson (Person p)
     {
+        //fieldFirst.setText(""+i);
         currentPerson = p;
-        handleUpdate();
+        UpdateFields();
     }
 
     public void handleNewPerson ()
