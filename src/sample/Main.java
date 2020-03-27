@@ -19,9 +19,10 @@ public class Main extends Application {
     protected File file=new File("Resources");
     private String filePath= file.getAbsolutePath();
 
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        ResourceBundle bundle = java.util.ResourceBundle.getBundle("sample.AddressBook_en");
+        ResourceBundle bundle = java.util.ResourceBundle.getBundle("sample.AddressBook");
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"), bundle);
         primaryStage.setTitle(bundle.getString("application.name") + bundle.getString("application.version"));
         primaryStage.setScene(new Scene(root, 500, 600));
@@ -34,10 +35,5 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-
     }
-
-
-
-
 }

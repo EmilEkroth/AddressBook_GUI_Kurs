@@ -10,6 +10,9 @@ import javafx.scene.image.ImageView;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
+
+import static java.util.ResourceBundle.getBundle;
 
 public class Controller {
     protected File file=new File("Resources");
@@ -138,10 +141,5 @@ public class Controller {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-    }
-
-    public void changeLanguage()
-    {
-
     }
 }
