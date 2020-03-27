@@ -6,6 +6,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 
+import javafx.scene.image.ImageView;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +19,10 @@ public class Controller {
     public Person currentPerson = new Person(0); //TODO fix list
     public   List<Person> people = new ArrayList<Person>(1);
 
-    @FXML public javafx.scene.image.ImageView new24pic;
-    @FXML public javafx.scene.image.ImageView new16pic;
-    @FXML public javafx.scene.image.ImageView delete24pic;
-    @FXML public javafx.scene.image.ImageView delete16pic;
+    @FXML public ImageView new24pic;
+    @FXML public ImageView new16pic;
+    @FXML public ImageView delete24pic;
+    @FXML public ImageView delete16pic;
 
     @FXML public Button newButton;
     @FXML public Button deleteButton;
