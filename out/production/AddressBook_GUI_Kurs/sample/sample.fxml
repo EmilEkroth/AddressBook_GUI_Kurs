@@ -47,19 +47,19 @@
                               <Pane layoutX="30.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldFirst" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="%firstNameLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="17.0" prefWidth="67.0" text="First Name:" />
                                  </children>
                               </Pane>
                               <Pane layoutX="30.0" layoutY="10.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldLast" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutY="13.0" prefHeight="17.0" prefWidth="67.0" text="%lastNameLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutY="13.0" prefHeight="17.0" prefWidth="67.0" text="Last Name:" />
                                  </children>
                               </Pane>
                               <Pane layoutX="30.0" layoutY="45.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldPhone" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="10.0" prefHeight="23.0" prefWidth="48.0" text="%phoneLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="10.0" prefHeight="23.0" prefWidth="48.0" text="Phone:" />
                                  </children>
                               </Pane>
                               <Pane layoutX="30.0" layoutY="80.0" prefHeight="35.0" prefWidth="300.0">
@@ -77,13 +77,13 @@
                               <Pane layoutX="30.0" layoutY="115.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldPost" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="7.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="%postcodeLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="7.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="Post Code:" />
                                  </children>
                               </Pane>
                               <Pane layoutX="30.0" layoutY="150.0" prefHeight="35.0" prefWidth="300.0">
                                  <children>
                                     <TextField fx:id="fieldCity" layoutX="76.0" layoutY="2.0" onAction="#handleUpdate" prefHeight="31.0" prefWidth="162.0" text="test" />
-                                    <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="13.0" prefHeight="17.0" prefWidth="34.0" text="%cityLabel.text" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="31.0" layoutY="13.0" prefHeight="17.0" prefWidth="34.0" text="City:" />
                                  </children>
                               </Pane>
                            </children>

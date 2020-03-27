@@ -34,6 +34,7 @@ public class Controller {
     public TextField fieldEmail;
     public TextField fieldPost;
     public TextField fieldCity;
+    public TextField fieldAdress;
 
 
     public Language language = new EnglishLanguage();
@@ -60,6 +61,7 @@ public class Controller {
         currentPerson.setEmail(fieldEmail.getText());
         currentPerson.setPostCode(fieldPost.getText());
         currentPerson.setCity(fieldCity.getText());
+        currentPerson.setAdress(fieldAdress.getText());
 
         personbutton.get(currentPerson.nr).setText(currentPerson.getFirstName() +" "+ currentPerson.getLastName());
     }
@@ -72,6 +74,7 @@ public class Controller {
         fieldEmail.setText(currentPerson.getEmail());
         fieldPost.setText(currentPerson.getPostCode());
         fieldCity.setText(currentPerson.getCity());
+        fieldAdress.setText(currentPerson.getAdress());
 
     }
 

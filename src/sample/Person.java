@@ -12,6 +12,7 @@ public class Person implements Serializable {
     private String email;
     private String postCode;
     private String city;
+    private String Adress;
 
     public int nr;
 
@@ -66,6 +67,12 @@ public class Person implements Serializable {
 
     public void setCity(String city) {
         this.city = city;
+    }
+    public String getAdress(){
+        return Adress;
+    }
+    public void setAdress(String s){
+        Adress=s;
     }
 
 
