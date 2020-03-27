@@ -1,12 +1,10 @@
 package sample;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.scene.image.Image;
-import javafx.scene.layout.Pane;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 
 import javafx.scene.image.ImageView;
 import java.io.*;
@@ -39,7 +37,21 @@ public class Controller {
 
 
     public Language language = new EnglishLanguage();
+    public void initialize(){
+                System.out.println("hej");
+        try {
+           new24pic.setImage(new Image(new FileInputStream(filePath+"/New24.gif")));
+            new16pic.setImage(new Image(new FileInputStream(filePath+"/New16.gif")));
+            delete16pic.setImage(new Image(new FileInputStream(filePath+"/Delete16.gif")));
+            delete24pic.setImage(new Image(new FileInputStream(filePath+"/Delete24.gif")));
+        }
+        catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
 
+
+
+    }
     public void handleUpdate()
     { //This function is called upon when a text field is edited.
 
